@@ -16,11 +16,18 @@ def SpeakText(command):
 	engine = pyttsx3.init()
 	engine.say(command)
 	engine.runAndWait()
-	
-	
+
+
+
+def detect_word(text):
+	myword = ["gpa", "module", "plannig", "agenda", "credits", "modules"]
+	for word in text.split():
+		if word in myword:
+			print(word)
+			return word
+	print("word not found")
 # Loop infinitely for user to
 # speak
-
 
 def get_audio():
 	while(1):
@@ -46,6 +53,7 @@ def get_audio():
 
 				print("Vous avez dit: ",MyText)
 				SpeakText(MyText)
+				detect_word(MyText)
 				
 		except sr.RequestError as e:
 			print("Could not request results; {0}".format(e))
