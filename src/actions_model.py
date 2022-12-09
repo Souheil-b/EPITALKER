@@ -9,6 +9,7 @@ def get_api_response(text):
     response = requests.post(rasa_url, json={
         "sender": "user",
         "message": text
+
     })
 
     # Affichage de la réponse de l'API
