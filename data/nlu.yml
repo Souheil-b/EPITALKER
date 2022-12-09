@@ -3,6 +3,24 @@ nlu:
   - intent: ask_gpa
     examples: |
       - Quel est mon gpa?
+      - Quel est mon GPA actuel?
+      - Quelle est ma moyenne générale actuelle?
+      - Quel est mon GPA en ce moment?
+      - Quelle est ma note moyenne en ce moment?
+      - Donnes moi mon GPA.
+      - Peux-tu me donner mon GPA stp?
+      - Peux-tu me dire mon GPA actuel?
+  - intent: ask_planning
+    examples: |
+      - Quel est mon planning?
+      - Quel est mon emplois du temps?
+      - Quel est mon agenda?
+      - Montre-moi mon planning.
+      - Montre-moi mon agenda.
+      - Montre-moi mon emplois du temps.
+      - J'ai quoi de prévu?
+      - J'ai quoi cette semaine?
+      - Quels sont mes rendez-vous?
 # nlu:
 # - intent: greet
 #   examples: |
