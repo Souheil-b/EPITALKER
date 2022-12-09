@@ -63,3 +63,19 @@ class ActionPlanning(Action):
                 dispatcher.utter_message(
                     text="Sorry, I can't get your planning right now")
             return []
+
+class ActionModul(Action):
+        
+            def name(self) -> Text:
+                return "action_modul"
+        
+            def run(self, dispatcher: CollectingDispatcher,
+                    tracker: Tracker,
+                    domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+                status = 3
+                if status:
+                    dispatcher.utter_message(text="You are regested at math modul")
+                else:
+                    dispatcher.utter_message(
+                        text="Sorry, I can't get your modul right now")
+                return []

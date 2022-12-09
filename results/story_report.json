@@ -6,40 +6,64 @@
     "support": 1
   },
   "ask_gpa": {
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1-score": 0.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "action_planning": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "ask_planning": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
     "support": 1
   },
   "action_listen": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
+    "support": 3
+  },
+  "ask_modul": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
     "support": 1
+  },
+  "action_modul": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "accuracy": 1.0,
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9
   },
   "micro avg": {
     "precision": 1.0,
-    "recall": 0.6666666666666666,
-    "f1-score": 0.8,
-    "support": 3
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9
   },
-  "macro avg": {
-    "precision": 0.6666666666666666,
-    "recall": 0.6666666666666666,
-    "f1-score": 0.6666666666666666,
-    "support": 3
-  },
-  "weighted avg": {
-    "precision": 0.6666666666666666,
-    "recall": 0.6666666666666666,
-    "f1-score": 0.6666666666666666,
-    "support": 3
-  },
-  "accuracy": 0.6666666666666666,
   "conversation_accuracy": {
-    "accuracy": 0.0,
-    "correct": 0,
+    "accuracy": 1.0,
+    "correct": 3,
     "with_warnings": 0,
-    "total": 1
+    "total": 3
   }
 }

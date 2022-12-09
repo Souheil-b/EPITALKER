@@ -13,4 +13,6 @@ def get_api_response(text):
 
     # Affichage de la réponse de l'API
     print(response.json())
-get_api_response("quel est mon agenda?")
+get_api_response("quel est mon gpa?")
+get_api_response("quel mon agenda?")
+get_api_response("quels sont mes modules?")

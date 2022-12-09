@@ -12,6 +12,11 @@ stories:
   - intent: ask_planning
   - action: action_planning
 
+- story: ask for modul
+  steps:
+  - intent: ask_modul
+  - action: action_modul
+
 # - story: sad path 1
 #   steps:
 #   - intent: greet
