@@ -8,10 +8,23 @@ stories:
       Quel est mon gpa?
     intent: ask_gpa
   - action: action_gpa
-  # - user: |
-  #     amazing
-  #   intent: mood_great
-  # - action: utter_happy
+
+- story: ask for planning
+  steps:
+    - user: |
+        Quel est mon planning?
+      intent: ask_planning
+    - action: action_planning
+
+- story: ask for modul
+  steps:
+    - user: |
+        Quels sont mes modules en cours?
+      intent: ask_modul
+    - action: action_modul
+
+
+
 
 # - story: happy path 2
 #   steps:

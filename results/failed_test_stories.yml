@@ -1,6 +1,1 @@
-version: "3.1"
-stories:
-- story: ask for gpa (./tests/test_stories.yml)
-  steps:
-  - intent: ask_gpa  # predicted: nlu_fallback: Quel est mon gpa?
-  - action: action_gpa
+# None of the test stories failed - all good!

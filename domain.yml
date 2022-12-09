@@ -2,9 +2,13 @@ version: "3.1"
 
 intents:
   - ask_gpa
+  - ask_planning
+  - ask_modul
 
 actions:
   - action_gpa
+  - action_planning
+  - action_modul
 
 session_config:
   session_expiration_time: 60

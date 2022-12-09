@@ -6,8 +6,16 @@ stories:
   steps:
   - intent: ask_gpa
   - action: action_gpa
-#   - intent: mood_great
-#   - action: utter_happy
+
+- story: ask for planning
+  steps:
+  - intent: ask_planning
+  - action: action_planning
+
+- story: ask for modul
+  steps:
+  - intent: ask_modul
+  - action: action_modul
 
 # - story: sad path 1
 #   steps:
