@@ -1,0 +1,80 @@
+.scrolling-text {
+    width: 100%; /* largeur du texte */
+    white-space: nowrap; /* empêche le texte de se retourner sur plusieurs lignes */
+    overflow: hidden; /* cache les parties du texte qui dépassent de la largeur définie */
+    box-sizing: border-box; /* inclut les paddings et les bordures dans la largeur du texte */
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    margin-left: auto;
+    font-family: "Roboto", sans-serif; /* police de caractères futuriste */
+    color: rgb(0, 0, 0); /* couleur blanche pour un aspect futuriste */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00e6e6, 0 0 70px #00e6e6, 0 0 80px #00e6e6, 0 0 100px #00e6e6, 0 0 150px #00e6e6; /* ombre portée pour donner un effet de profondeur */
+  }
+  
+  /* animation de défilement du texte */
+  .scrolling-text {
+    animation: marquee 10s linear 1;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.search-bar {
+    display: flex;
+    border: 2px solid #000000;
+    height: 25px;
+    width: 650px;
+    border-radius: 30px;
+    margin-top: 4%;
+    padding-left: 10px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    font-size: 1em;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .search-button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border: none;
+    margin-top: 0.5em;
+    border-radius: 30px;
+    background: linear-gradient(to right, #00b1ff, #00b1ff);
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .search-button:hover {
+    background: linear-gradient(to right, #00b1ff, #00c9ff);
+  }
+  
+  .search-button:active {
+    background: linear-gradient(to right, #00b1ff, #00a6ff);
+  }
