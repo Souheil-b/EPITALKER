@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
-// import { Route } from 'react-router-dom'
-// import { MDBCol, MDBFormInline, MDBBtn } from "mdbreact";
+import React, {useState} from 'react';
 import '../CSS/home.css'
+import { Link } from 'react-router-dom';
 
-function Home() {
+import { useHistory } from 'react-router-dom';
+
+function Home() {    
     const [value, setValue] = useState('');
+
+
+    const history = useHistory();
+    const handleClick = () => {
+        history.push('/api', { link: value });
+      };
     return (
         <>
             <div className="scrolling-text">
@@ -16,13 +23,22 @@ function Home() {
                         value={value}
                         onChange={(event) => setValue(event.target.value)}
                         />
-                        <button
-                            type="submit"
-                            className="search-button"
-                            onClick={() => alert(value)}
-                        >
-                            Rechercher
-                        </button>
+
+                        <Link to={
+                            {
+                                pathname: "/login",
+                                state: { link: value }
+                            }
+                            }>
+                            
+                            <button
+                                type="submit"
+                                className="search-button"
+                            >
+                                Rechercher
+                            </button>
+                        </Link>
+                        
                     </form>
                 </div>
         </>
